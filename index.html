@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SnapSpace – Photography portfolio</title>
+<meta name="description" content="SnapSpace is a photography studio portfolio with collections of nature, architecture, street, travel and portrait photography.">
+<meta name="theme-color" content="#fbfbfa">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23141414'/%3E%3Crect x='9' y='9' width='14' height='14' fill='none' stroke='%23fbfbfa' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#/">SnapSpace</a>
+  <nav aria-label="Main">
+    <a data-r="gallery" href="#/gallery">Gallery</a>
+    <a data-r="about" href="#/about">About</a>
+    <a data-r="contact" href="#/contact">Contact</a>
+  </nav>
+</header>
+<main id="app"></main>
+<footer>
+  <p>SnapSpace is a sample portfolio. The studio, text and photographs are placeholders for demonstration.</p>
+  <p>Sample photographs courtesy of Unsplash contributors.</p>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+  <button class="lbb x" id="lbx" aria-label="Close viewer">Close</button>
+  <button class="lbb pv" id="lbp" aria-label="Previous photograph">&#8249;</button>
+  <figure class="lbf"><img id="lbimg" alt=""><figcaption id="lbcap"></figcaption></figure>
+  <button class="lbb nx" id="lbn" aria-label="Next photograph">&#8250;</button>
+  <div class="lbbar"><span id="lbc"></span><button class="lbb" id="lbf" aria-pressed="false">Save to favourites</button></div>
+</div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
